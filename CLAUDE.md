@@ -15,25 +15,16 @@ workflows — none exist.
 ```
 .
 ├── README.md    # Profile bio + Publications list shown on the GitHub profile page
-├── CLAUDE.md    # This file (guidance for AI assistants; not shown on the profile)
-└── assets/      # Publication thumbnails (SVG source + rasterized PNG)
+└── CLAUDE.md    # This file (guidance for AI assistants; not shown on the profile)
 ```
 
-### Publication thumbnails
+### Publications
 
-Each publication in `README.md` is paired with a thumbnail in `assets/`. The
-workflow used so far:
-
-- Author the thumbnail as an SVG (`assets/<name>.svg`) — dark gradient
-  background, title, authors, and a small illustrative panel.
-- Rasterize to PNG for reliable GitHub rendering with cairosvg:
-  `python3 -c "import cairosvg; cairosvg.svg2png(url='assets/<name>.svg', write_to='assets/<name>.png', output_width=1200, output_height=675)"`
-  (cairosvg / Pillow may need `pip install`).
-- Reference the PNG (not the SVG) from the README and link the image to the
-  paper's arXiv abstract page.
-- Note: arXiv hosts are typically blocked from the sandbox, so paper metadata
-  may need to come from web search rather than fetching the page directly;
-  verify titles/authors before publishing.
+`README.md` contains a Publications section. Entries are plain Markdown
+(title in bold, authors, venue, and an arXiv link). Note: arXiv hosts are
+typically blocked from the sandbox, so paper metadata may need to come from
+web search rather than fetching the page directly — verify titles/authors
+before publishing.
 
 ## Working in this repo
 
