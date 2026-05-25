@@ -14,9 +14,17 @@ workflows — none exist.
 
 ```
 .
-├── README.md    # Profile bio shown on the GitHub profile page
+├── README.md    # Profile bio + Publications list shown on the GitHub profile page
 └── CLAUDE.md    # This file (guidance for AI assistants; not shown on the profile)
 ```
+
+### Publications
+
+`README.md` contains a Publications section. Entries are plain Markdown
+(title in bold, authors, venue, and an arXiv link). Note: arXiv hosts are
+typically blocked from the sandbox, so paper metadata may need to come from
+web search rather than fetching the page directly — verify titles/authors
+before publishing.
 
 ## Working in this repo
 
